@@ -1,0 +1,19 @@
+{
+    "compilerOptions": {
+      "target": "ES2020",            // Define o padrão de ECMAScript para o código compilado
+      "module": "commonjs",          // Define o sistema de módulos a ser usado (CommonJS para Node.js)
+      "strict": true,                // Ativa verificações rigorosas de tipo
+      "esModuleInterop": true,       // Facilita a interoperabilidade entre módulos ES e CommonJS
+      "skipLibCheck": true,          // Pula a verificação de tipos em arquivos de declaração
+      "forceConsistentCasingInFileNames": true, // Garante o uso consistente de maiúsculas e minúsculas em nomes de arquivos
+      "outDir": "dist",              // Diretório de saída para os arquivos compilados
+      "rootDir": "src",              // Diretório raiz do código-fonte
+      "moduleResolution": "node",    // Método de resolução de módulos
+      "resolveJsonModule": true,     // Permite importar arquivos JSON como módulos
+      "isolatedModules": true,       // Garante que cada arquivo seja tratado como um módulo isolado
+      "noEmitOnError": true          // Impede a emissão de arquivos se houver erros de compilação
+    },
+    "include": ["src/**/*.ts", "prisma/**/*.ts"], // Inclui todos os arquivos TypeScript no diretório 'src' e 'prisma'
+    "exclude": ["node_modules"]      // Exclui o diretório 'node_modules' do processo de compilação
+  }
+  
